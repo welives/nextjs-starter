@@ -1,3 +1,10 @@
+import { type ClassValue, clsx } from 'clsx'
+import { twMerge } from 'tailwind-merge'
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
+
 interface AnyObj {
   [key: string]: any
 }
@@ -237,7 +244,7 @@ class Utils {
   /** @description 洗牌算法 */
   shuffle = (arr: any[]) => {
     const res = []
-    let random = 0
+    let random = void 0
     while (arr.length > 0) {
       random = Math.floor(Math.random() * arr.length)
       res.push(arr.splice(random, 1)[0])
@@ -260,4 +267,4 @@ class Utils {
     return target
   }
 }
-export default Utils.instance
+export const utils = Utils.instance
