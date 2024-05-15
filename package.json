@@ -1,7 +1,9 @@
 {
   "name": "nextjs-starter",
-  "description": "开箱即用的基于 Next.js + TailwindCSS + Prettier + TypeScript 的模板",
   "version": "1.0.0",
+  "description": "开箱即用的基于 Next.js + TailwindCSS + Prettier + TypeScript 的模板",
+  "author": "welives",
+  "license": "MIT",
   "keywords": [
     "Next.js",
     "React",
@@ -10,8 +12,6 @@
     "ESLint",
     "Prettier"
   ],
-  "author": "welives",
-  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
